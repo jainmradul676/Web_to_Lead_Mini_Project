@@ -15,7 +15,7 @@
     <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
 
     <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00D5g00000Fo37w"
-        method="POST" onsubmit="beforeSubmit()">
+        method="POST" onsubmit="beforeSubmit(event)">
 
         <input type=hidden name="oid" value="00D5g00000Fo37w">
         <input type=hidden name="retURL" value="https://jainmradul676.github.io/Web_to_Lead_Mini_Project/thanks.html">
@@ -41,7 +41,8 @@
         <label for="leadDate">Lead Date</label>
         <input class="inputDate" type="date" required='true'>
         <br>
-        <div class="g-recaptcha" data-sitekey="6LchdDIrAAAAAAJ7R-HSGf7IZEivlTuz9-pcn9EW"></div><br>
+        <div data-callback="captchaSuccess()" class="g-recaptcha"
+            data-sitekey="6LchdDIrAAAAAAJ7R-HSGf7IZEivlTuz9-pcn9EW"></div><br>
         <input class="submit" type="submit" name="submit">
 
     </form>

@@ -32,6 +32,11 @@ input {
   border-color: white;
 }
 
+.submit:hover {
+  background-color: rgba(0, 0, 0, 0.724);
+  cursor: pointer;
+}
+
 form {
   min-width: 300px;
   max-width: 600px;
@@ -41,7 +46,7 @@ form {
 }
 
 .g-recaptcha {
-  margin: 15px;
+  margin: 15px auto 0 auto;
   display: flex;
   justify-content: center;
 }
