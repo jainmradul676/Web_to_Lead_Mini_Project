@@ -4,11 +4,11 @@ function beforeSubmit(event) {
   if (captchaChecked) {
     let outputDate = document.querySelector(".outputDate");
     let inputDate = document.querySelector(".inputDate");
-    //   console.log(inputDate);
+    // console.log(inputDate);
     let formattedDate = new Date(inputDate.value).toLocaleDateString("en-US");
     outputDate.value = formattedDate;
   } else {
-    alert("Please check the captcha first, to sybmit the form.");
+    alert("Please check the captcha first, to submit the form.");
     event.preventDefault(); // Prevent form submission
   }
 }
