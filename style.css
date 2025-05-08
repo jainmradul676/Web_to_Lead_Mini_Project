@@ -23,12 +23,12 @@ input {
 }
 
 .submit {
-  width: 20%;
-  margin: 20px auto 0 auto;
-  background-color: blue;
+  width: 30%;
+  margin: 15px auto 0 auto;
+  background-color: rgb(183, 0, 255);
   color: white;
   padding: 4px;
-  border-radius: 6px;
+  border-radius: 10px;
   border-color: white;
 }
 
@@ -38,4 +38,10 @@ form {
   margin: 50px auto;
   padding: 15px;
   border: 2px solid black;
+}
+
+.g-recaptcha {
+  margin: 15px;
+  display: flex;
+  justify-content: center;
 }
